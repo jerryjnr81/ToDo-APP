@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="todo-container">
+        <div id="header">
+            <h1>To Do App</h1>
+        </div>
+        <div id="todo-form">
+            <input 
+                type="text" 
+                class="input-item" 
+                name="input-box" 
+                id="input-box" 
+                placeholder="Add Task"
+            >
+            <button id="input-button" onclick="addTask()">Add</button>
+            <button id="view">View</button>
+        </div>
+        <h2>Task List</h2>
+        <ul id="list-container"></ul>
+        <hr />
+        <div class="counter-container">
+            <div id="task-counter">
+                complete: <span id="complete-counter">0</span>
+                &nbsp;|&nbsp;
+                uncomplete: <span id="uncomplete-counter">0</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="toDo.js"></script>
+</body>
+</html>
